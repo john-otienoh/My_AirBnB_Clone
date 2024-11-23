@@ -1,1 +1,12 @@
-{"person1": {"name": "John", "age": 20, "gender": "male"}, "person2": {"name": "Jane", "age": 20, "gender": "female"}}
+{
+    "person1": {
+        "name": "John",
+        "age": 20,
+        "gender": "male"
+    },
+    "person2": {
+        "name": "Jane",
+        "age": 20,
+        "gender": "female"
+    }
+}
