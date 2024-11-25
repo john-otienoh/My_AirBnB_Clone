@@ -3,6 +3,12 @@
 import json
 from os import path
 from models.base_model import BaseModel
+from models.user import User
+from models.city import City
+from models.place import Place
+from models.amenity import Amenity
+from models.review import Review
+from models.state import State
 
 class FileStorage():
     """File Storage Class"""
@@ -28,7 +34,7 @@ class FileStorage():
             data[k] = v.to_dict()
         
         with open(FileStorage.__file_path, 'w') as file:
-            json.dump(data, file)
+            json.dump(data, file, indent=4)
 
     def reload(self):
         """Realoads Instances"""
